@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <button id="decreaseBtn" onclick="decrease()">decrease by 1</button>
+        <input type="number" name="input" id="input" value="0" readonly />
+        <button id="increaseBtn" onclick="increase()">increase by 1</button>
+      </div>
+      <div class="bottom">
+        <button id="resetBtn" onclick="reset()">Reset</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
