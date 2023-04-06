@@ -1,0 +1,48 @@
+body {
+  background-color: skyblue;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+p {
+  display: none;
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    background-color: green;
+  }
+  .p4 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  body {
+    background-color: lightsalmon;
+  }
+  .p3 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: lightskyblue;
+  }
+  .p2 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  body {
+    background-color: pink;
+  }
+  .p1 {
+    display: block;
+  }
+}
