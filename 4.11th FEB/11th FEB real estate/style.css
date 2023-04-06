@@ -1,0 +1,430 @@
+/* reset default css setting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header navigation menu */
+header {
+  display: flex;
+  margin: 30px 10vw;
+}
+
+header + hr {
+  margin: 0 7vw;
+}
+
+header::before {
+  content: '';
+  background: linear-gradient(#1d1c1c60, #3331315d), url('Photos/mainBackground.png') no-repeat center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 110vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 4%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #dddd18;
+    font-weight: bold;
+}
+
+.headerright {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.headerright button a{
+    text-decoration: none;
+}
+
+.headerright button {
+    padding: 5px 12px;
+    background-color: rgb(212, 45, 45);
+}
+
+header img {
+  height: 50px;
+}
+
+header nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header ul li {
+  margin: 0 25px;
+  font-size: 1.5rem;
+  color: #ffff;
+}
+
+/* design main view */
+.main-view {
+  margin: 0 10vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main h1 {
+  color: #ffff;
+  font-size: 6rem;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+  line-height: 1.4;
+}
+
+main p {
+  color: #ffff;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+main button {
+  padding: 13px 25px;
+  background-color: #2f6cdd;
+  color: #ffff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* logo section */
+.mainlogosection {
+  height: 300px;
+  margin: 0 5vw;
+  padding: 60px 0 0 0;
+}
+
+.logosection {
+  background-color: rgb(245, 104, 23);
+  position: relative;
+  top: 0px;
+  height: 200px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* card section */
+.cardsection {
+  background-color:  #ebe6e6;
+  margin-bottom: 50px;
+}
+
+.cardsection h1 {
+  color: #000000;
+  font-size: 5rem;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.all-cards {
+  padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 60px;
+}
+
+.card {
+  width: 30%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.cardinfo {
+  background-color: #fff;
+  width: 80%;
+  height: 150px;
+  position: relative;
+  top: -10%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.card-left h3 {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.card-left p {
+  color: black;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #920ad1;
+}
+
+.card-right button {
+  background-color: #920ad1;
+}
+
+.card2, .card5, .card8 {
+  margin-top: 75px;
+}
+
+.card3, .card4, .card9 {
+  margin-top: 150px;
+}
+
+/* books section */
+.booksection {
+  display: flex;
+  margin: 200px 0;
+}
+
+.book-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img[alt='featuresImage1'] {
+  width: 60%;
+  height: 120%;
+  border-radius: 25px;
+}
+
+.book-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.book-right h1 {
+  color: black;
+  font-size: 4.5rem;
+  line-height: 1.3;
+  margin-bottom: 40px;
+}
+
+.book-right p {
+  color: rgb(70, 64, 64);
+  font-size: 1.5rem;
+}
+
+
+
+/* book section 2 */
+.booksection2 {
+  display: flex;
+  height: 550px;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.book-left2 {
+  width: 60%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid orange; */
+}
+
+.book-left2 h1 {
+  color: black;
+  font-size: 4.5rem;
+  line-height: 1.3;
+  margin-bottom: 40px;
+  letter-spacing: 4px;
+}
+
+.book-left2 p {
+  color: rgb(63, 60, 60);
+  font-size: 1.5rem;
+}
+
+.book-right2 {
+  width: 40%;
+  /* border: 1px solid red; */
+}
+
+img[alt='featureImageBg2'] {
+  width: 60%;
+  background-size: 100% 100%;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  bottom: -50px;
+}
+
+img[alt='featuresImage2'] {
+  border-radius: 50px;
+  position: relative;
+  width: 55%;
+  height: 80%;
+  top: -510px;
+  left: 26%;
+}
+
+/* subscribe section */
+.subscribesection {
+  background-color: #920ad1;
+  margin: 100px 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  border-radius: 100px;
+}
+
+.subscribesection h1 {
+  font-size: 4.4rem;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subscribesection p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mail-box input {
+  width: 500px;
+  height: 70px;
+  border-radius: 40px;
+  padding-left: 60px;
+  background-color: #5854549a;
+  border: none;
+}
+
+.mail-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img[alt='mail'] {
+  position: relative;
+  left: -480px;
+}
+
+.mail-box input:focus {
+  font-size: 1.5rem;
+  color: #ffff;
+}
+
+.mail-box button {
+  color: #920ad1;
+  background-color: #ffff;
+}
+
+/* footer */
+footer {
+  display: flex;
+  margin: 0 5vw;
+  height: 400px;
+}
+
+.left-footer {
+  width: 70%;
+}
+
+.left-footer .footer-logo {
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.social-icons img {
+  cursor: pointer;
+}
+
+.left-footer p {
+  font-size: 1.5rem;
+}
+
+.right-footer {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-footer h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.right-footer ul li {
+  font-size: 1.4rem;
+  color: #3a3636;
+  margin-bottom: 10px;
+}

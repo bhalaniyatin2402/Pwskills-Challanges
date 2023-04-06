@@ -1,0 +1,456 @@
+/* reset defsult css setting */
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f10;
+  color: #ffff;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  margin: 0 15vw;
+}
+
+/* header */
+header{
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+}
+
+img[alt='beatsLogo'] {
+  height: 25px;
+  margin: auto;
+}
+
+header nav  {
+  display: flex;
+  margin-left: auto;
+}
+
+header nav ul{
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+header nav ul li button{
+  background-color: #29292ce7;
+  padding: 12px 35px;
+  border-radius: 10px;
+  box-shadow: inset 1px 1px 3px #ffff;
+  cursor: pointer;
+}
+
+
+/* main first section */
+img[alt='mainImage'] {
+  position: relative;
+  width: 235px;
+  top: -200px;
+  left: 30px;
+}
+
+.firstsection {
+  display: flex;
+  height: 500px;
+}
+
+.subfirstsection {
+  margin: 0 0 0 10vw;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.onEar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+img[alt='onEar'] {
+  height: 12vh;
+}
+
+.subfirstsection h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.subfirstsection h2 + p {
+  font-size: 1rem;
+  /* font-weight: bold; */
+  margin-bottom: 25px;
+}
+
+.subfirstsection > p + p {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #9a9a9c;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+.subfirstsection button {
+  display: flex;
+  padding: 10px 5px;
+  width: 40%;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #29292ce7;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.subfirstsection button img {
+  height: 17px;
+  background-color: #29292ce7;
+}
+
+.subfirstsection button p {
+  font-size: 0.7rem;
+  background-color: #29292ce7;
+
+}
+
+.subfirstsection button p + p {
+  font-size: 1rem;
+  background-color: #29292ce7;
+}
+
+/* main second section */
+.secondsection ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.secondsection ul li img{
+  height: 23px;
+}
+
+img[alt='youtubeLogo'] {
+  height: 15px !important;
+}
+
+img[alt='amazonlogo'] {
+  height: 18px !important;
+}
+
+
+/* main third section */
+.thirdsection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.specslogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+img[alt='specsLogo'] {
+  height: 50px;
+}
+
+.subthirdsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.box1 {
+  padding: 0 0 0px 25px;
+}
+
+.box4 {
+  padding: 0 0 15px 25px;
+}
+
+.box img {
+  height: 17px;
+  margin-bottom: 9px;
+}
+
+.box > img + p {
+  font-size: 0.7rem;
+  margin-bottom: 4px;
+}
+
+.box > p + p {
+  font-size: 0.7rem;
+  color: #9a9a9c;
+}
+
+
+/* main forth section */
+.forthsection {
+  margin-bottom: 100px;
+}
+
+.caselogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img[alt='caseLogo'] {
+  height: 40px;
+}
+
+.subforthsection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8vh 0;
+  gap: 40px;
+}
+
+img[alt='caseImage'] {
+  height: 40vh;
+}
+
+.right-forth > p {
+  font-size: 0.8rem;
+  line-height: 2;
+  color: #9a9a9c;
+  margin-bottom: 15px;
+}
+
+.right-forth button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 12px;
+  border-radius: 12px;
+  background-color: #29292ce7;
+  border: none;
+}
+
+.right-forth button img {
+  background-color: #29292ce7;
+  height: 17px;
+}
+
+.right-forth button p {
+  background-color: #29292ce7;
+}
+
+
+/* main fifth section */
+.fifthsection * {
+  background-color: #1d1d1f;
+}
+
+.fifthsection {
+  background-color: #1d1d1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 0;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  gap: 25px;
+}
+
+img[alt='buyNowSectionImage'] {
+  height: 35vh;
+}
+
+.fifth-left > p {
+  margin-bottom: 10px;
+}
+
+.fifth-left p + p {
+  font-size: 0.8rem;
+  color: #9a9a9c;
+}
+
+.fifth-left button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 12px;
+  border-radius: 12px;
+  background-color: #0f0f10;
+  border: none;
+}
+
+.fifth-left button img {
+  background-color: #0f0f10;
+  height: 17px;
+}
+
+.fifth-left button p {
+  background-color: #0f0f10;
+}
+
+
+/* main six section */
+.sixsection {
+  margin-bottom: 100px;
+}
+
+.productlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img[alt='productLogo'] {
+  height: 80px;
+  margin-bottom: 50px;
+}
+
+.subsixsection {
+  display: flex;
+  margin: 0 15vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  gap: 50px;
+}
+
+.subsixsection .product{
+  height: 110px;
+  /* border: 1px solid orange; */
+  width: 120px;
+  background-color: #1d1d1f;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.productimage {
+  height: 70px;
+  background-color: #1d1d1f;
+  border-radius: 8px;
+}
+
+.productimage img {
+  width: 60px;
+  position: relative;
+  top: -40px;
+  left: 30px;
+  background-color: #ffffff00;
+}
+
+.productinfo {
+  display: flex;
+  width: 100%;
+  background-color: #1d1d1f;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.productinfo-left p {
+  background-color: #1d1d1f;
+  font-size: 0.7rem;
+  padding-bottom: 5px;
+}
+
+.productinfo-left p + p {
+  color: #9a9a9c;
+}
+
+.productinfo-right {
+  background-color: #0f0f10;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.productinfo-right img {
+  background-color: #1d1d1f;
+  height: 15px;
+}
+
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+footer h6 {
+  font-size: 1rem;
+  margin-bottom: 13px;
+  font-weight: 300;
+}
+
+footer li {
+  font-size: 0.8rem;
+  margin-bottom: 7px;
+  color: #9a9a9c;
+}
+
+#email {
+  width: 300px;
+  height: 38px;
+  background-color: #1d1d1f;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.footer3 button {
+  display: flex;
+  gap: 10px;
+  padding: 5px 15px;
+  position: relative;
+  top: -32px;
+  left: 170px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 20px;
+}
+
+.socialmedia img {
+  height: 25px;
+}
+
+img[alt='upArrow'] {
+  position: relative;
+  top: -170px;
+  left: 1050px;
+}
