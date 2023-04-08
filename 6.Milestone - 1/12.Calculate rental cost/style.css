@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: #be7f66b6;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid lightcyan;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: lightcyan;
+  box-shadow: 0 0 15px rgb(87, 187, 187);
+}
+
+.select,
+.converter,
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+select,
+button {
+  background-color: #d3d3d3;
+  cursor: pointer;
+}
+
+.design {
+  font-size: 1.2rem;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.info h1 {
+  margin-bottom: 15px;
+}
+
+.info p {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.info li {
+  margin-bottom: 6px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#carprice {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+#carprice span {
+  color: red;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="select">
+        <select name="temperature" id="temperature" class="design">
+          <option value="Fahrenheit to Celsius">Fahrenheit to Celsius</option>
+          <option value="Celsius to Fahrenheit">Celsius to Fahrenheit</option>
+        </select>
+      </div>
+      <div class="converter">
+        <input
+          type="number"
+          id="input"
+          class="design"
+          placeholder="Fahrenheit"
+        />
+        <input
+          type="text"
+          id="answer"
+          class="design"
+          placeholder="Celsius"
+          readonly
+        />
+      </div>
+
+      <div class="button">
+        <button id="btn" class="design">Convert</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

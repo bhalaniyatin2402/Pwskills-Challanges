@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculate rental cost</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="info">
+      <h1>Calculate Rental Cost</h1>
+      <p>The Rental Costs are -</p>
+      <ul>
+        <li>Economy = Rs. 4000 /- per day.</li>
+        <li>Midsize = Rs. 10,000 /- per day.</li>
+        <li>Luxury = Rs. 20,000 /- per day.</li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="select">
+        <select name="carType" id="cartype" class="design">
+          <option value="Economy Car">Economy Car</option>
+          <option value="Midsize Car">Midsize Car</option>
+          <option value="Luxury Car">Luxury Car</option>
+        </select>
+      </div>
+      <div class="converter">
+        <input
+          type="number"
+          id="days"
+          class="design"
+          placeholder="Number of days"
+        />
+        <input
+          type="text"
+          id="answer"
+          class="design"
+          placeholder="Total Cost"
+          readonly
+        />
+      </div>
+
+      <div class="button">
+        <button id="btn" class="design">Calculate Total Cost</button>
+      </div>
+      <p id="carprice"></p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
