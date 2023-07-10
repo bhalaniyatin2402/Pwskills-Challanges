@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./user.css">
+</head>
+<body>
+    {{>header}}
+
+    <main id="container">
+        <section id="mainLeft">
+            <h2>User Info :</h2>
+            <div id="accountImg">
+                <img src="../images/accountImage.png" alt="accountImage">
+            </div>
+            <button id="EditAccount" class="button"><a href="#" id="">Edit Account</a></button>
+        </section>
+        <section id="mainRight">
+            <div id="fieldOne" class="fields">
+                <h4>Name</h4>
+                <p id="nameField">{{name}}</p>
+            </div>
+            <div id="fieldTwo" class="fields">
+                <h4>Email</h4>
+                <p id="emailField">{{email}}</p>
+            </div>
+            <div id="fieldTwo" class="fields">
+                <h4>Username</h4>
+                <p id="usernameField">{{username}}</p>
+            </div>
+            <div id="fieldThree" class="fields">
+                <h4>Bio</h4>
+                <p id="numberField">{{bio}}</p>
+            </div>
+            <button id="logout" class="button"><a href="/logout" id="">Logout</a></button>
+        </section>
+    </main>
+</body>
+</html>

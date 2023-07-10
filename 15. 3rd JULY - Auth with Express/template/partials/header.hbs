@@ -1,0 +1,16 @@
+    <header>
+        <div id="logo">
+            <h2>LOGO</h2>
+        </div>
+        <nav>
+            <ul>
+                <li id=""><a href="/">Home</a></li>
+                <li id=""><a href="/about">About</a></li>
+                {{#if isLoggedIn}}
+                    <li id=""><a href="/user">My Account</a></li>
+                {{else}}
+                    <li id=""><a href="/login">Login/SignUp</a></li>
+                {{/if}}
+            </ul>
+        </nav>
+    </header>
