@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        
+    </div>
+<!-- This setup is not suitable for production. -->
+<!-- Only use it in development! -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script async src="https://ga.jspm.io/npm:es-module-shims@1.7.0/dist/es-module-shims.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react?dev",
+    "react-dom/client": "https://esm.sh/react-dom/client?dev"
+  }
+}
+</script>
+
+<script data-type="module" type="text/babel">
+
+import React, { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+
+function Event({ text, clickEvent}) {
+  return(
+    <button onClick={clickEvent}>
+      {text}  
+    </button>
+  )
+}
+
+function Button() {
+  function handleClick() {
+    alert('button clicked')
+  }
+
+  return(
+    <>
+      <Event text="click me" clickEvent={handleClick} />
+    </>
+  )
+}
+
+const root = createRoot(document.getElementById('root'))
+root.render(
+  <StrictMode>
+    <Button />  
+  </StrictMode>  
+)
+
+</script>
+
+<style>
+  
+</style>
+</body>
+</html>
+

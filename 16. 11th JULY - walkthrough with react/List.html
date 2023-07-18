@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        
+    </div>
+<!-- This setup is not suitable for production. -->
+<!-- Only use it in development! -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script async src="https://ga.jspm.io/npm:es-module-shims@1.7.0/dist/es-module-shims.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react?dev",
+    "react-dom/client": "https://esm.sh/react-dom/client?dev"
+  }
+}
+</script>
+
+
+<script data-type="module" type="text/babel">
+
+import React, { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+
+
+const mern = ['mongodb', 'express js', 'react js', 'node js']
+
+// first method - passing props when render to html
+// function List({ items }) {
+//     const listItem = items.map(ele => 
+//         <li> {ele} </li>
+//     )
+//     return(
+//         <>
+//             <h3>mern stack stands for</h3>
+//             <ul> {listItem} </ul>
+//         </>
+//     )
+// }
+
+
+// second method - passing props through another props
+function Items({ items }) {
+  const listItem = items.map(ele => 
+        <li> {ele} </li>
+  )
+  return(
+    <>
+      {listItem}
+    </>
+  )
+}
+
+function List() {
+  return(
+    <>
+      <h3>mern stack stands for</h3>
+      <ul>
+        <Items items={mern} />
+      </ul>
+    </>
+  )
+}
+
+const root = createRoot(document.getElementById('root'))
+root.render(
+  <StrictMode>
+    <List />
+  </StrictMode>  
+)
+
+
+</script>
+
+<style>
+
+  
+</style>
+</body>
+</html>
+
