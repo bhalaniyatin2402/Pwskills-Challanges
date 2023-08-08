@@ -1,0 +1,17 @@
+.image-gallary-header-wrapper {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    text-align: center;
+    padding: 12px;
+    z-index: 2;
+}
+
+.image-gallary-header-wrapper Link {
+    text-decoration: none;
+}
+
+.image-gallary-header-wrapper h1 {
+    text-decoration: none;
+}

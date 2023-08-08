@@ -1,0 +1,32 @@
+.image-gallary-wrapper {
+    margin: 15px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+    align-items: center;
+    margin-bottom: 8vh;
+}
+
+.controller-wrapper {
+    width: 100%;
+    position: fixed;
+    top: 92vh;
+    left: 0;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    background-color: #fff;
+}
+
+.controller-wrapper button {
+    padding: 6px 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
