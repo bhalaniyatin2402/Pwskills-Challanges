@@ -1,4 +1,4 @@
-Object.prototype.printDetails = function () {
+Student.prototype.printDetails = function () {
   console.log(`Hello, the student is ${this.name}`);
 };
 
@@ -8,5 +8,5 @@ class Student {
   }
 }
 
-const student = new Student("yatin")
+const student = new Student("yatin")  
 student.printDetails()

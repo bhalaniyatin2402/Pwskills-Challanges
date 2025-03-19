@@ -1,11 +1,11 @@
 const input = document.getElementById("input");
 const buttons = document.getElementsByTagName("button");
-const calc = "";
+let calc = "";
 
 const Btn = Array.from(buttons);
-Btn.forEach((x) => {
-  x.addEventListener("click", (e) => {
-    if (e.target.innerHTML == "=") {
+Btn.forEach((currButton) => {
+  currButton.addEventListener("click", (clickBtn) => {
+    if (clickBtn.target.innerHTML === "=") {
       try {
         calc = eval(input.value);
         input.value = calc;
@@ -14,11 +14,16 @@ Btn.forEach((x) => {
         calc = "";
         input.value = calc;
       }
-    } else if (e.target.innerHTML == "c") {
+    } else if (clickBtn.target.innerHTML === "AC") {
       calc = "";
       input.value = calc;
+    } else if(clickBtn.target.innerHTML === "DEL") {
+      try {
+        calc = calc.slice(0, calc.length-1);
+        input.value = calc
+      } catch (error) {}
     } else {
-      calc += e.target.innerHTML;
+      calc += clickBtn.target.innerHTML;
       input.value = calc;
     }
   });

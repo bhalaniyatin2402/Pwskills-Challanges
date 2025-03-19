@@ -15,11 +15,11 @@ function BillSplitter(dishes, numberOfPeople) {
   // amount pay by each person on table
   let amountPerPerson = Math.round((totalBill / numberOfPeople) * 10) / 10;
 
-  let result = {
+  return {
     totalBill: totalBill,
     amountPerPerson: amountPerPerson,
-  };
-  return result;
+  }
+  
 }
 
 const showBill = BillSplitter(dishesOnTable, 3);

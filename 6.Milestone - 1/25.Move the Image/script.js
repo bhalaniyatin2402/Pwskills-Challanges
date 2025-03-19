@@ -1,20 +1,28 @@
-const image = document.getElementsByTagName("img");
+const image = document.getElementById('image')
 const move = 10;
 
 document.addEventListener("keydown", (x) => {
   const key = x.key.toLowerCase();
-  let top = parseInt(image[0].style.top) || 0;
-  let left = parseInt(image[0].style.left) || 0;
+  let top = parseInt(image.style.top) || 0;
+  let left = parseInt(image.style.left) || 0;
 
   switch (key) {
     case "arrowup":
-      top -= move;
+      if(top < 0) {
+        return false
+      } else {
+        top -= move;
+      }
       break;
     case "arrowdown":
       top += move;
       break;
     case "arrowleft":
-      left -= move;
+      if(left < 0) {
+        return false
+      } else {
+        left -= move;
+      }
       break;
     case "arrowright":
       left += move;
@@ -23,6 +31,6 @@ document.addEventListener("keydown", (x) => {
       break;
   }
 
-  image[0].style.top = top + "px";
-  image[0].style.left = left + "px";
+  image.style.top = top + "px";
+  image.style.left = left + "px";
 });

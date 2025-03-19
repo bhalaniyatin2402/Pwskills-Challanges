@@ -1,14 +1,14 @@
-const fetchApiBtn = document.getElementById("fetchbtn");
+// const fetchApiBtn = document.getElementById("fetchbtn");
 
-fetchApiBtn.addEventListener("click", () => {
-  async function fetchData() {
-    try {
-      const response = await fetch("https://sonplaceholder.typicode.com/posts");
-      const result = await response.json();
+// fetchApiBtn.addEventListener("click", () => {
+//   async function fetchData() {
+//     try {
+      const response = fetch("https://sonplaceholder.typicode.com/posts");
+      const result =  response.json();
       console.log(result);
-    } catch (error) {
-      console.log(error.message);
-    }
-  }
-  fetchData();
-});
+//     } catch (error) {
+//       console.log(error.message);
+//     }
+//   }
+//   fetchData();
+// });
